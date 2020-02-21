@@ -20,7 +20,7 @@ You need to install the following two packages:
 - gcc : C\C++ compiler
 - make : instalation tool
 Open up a terminal and type the folllowing commands
-```
+```shell
 ~$ sudo apt update && sudo apt upgrade
 #Now to install compiler and instalation tool
 ~$ sudo apt-get install gcc make
@@ -34,7 +34,7 @@ Now you are ready to use the repo.
 ## Downloading, Instalation and Running the Program
 
 Now we will install and run teh program, but first let's download the repo:
-```
+```shell
 ~$ git clone https://github.com/VissaMoutafis/Snake_Game_in_Cpp
 ~$ cd Snake_Game_in_Cpp
 ~$ make run
@@ -43,7 +43,7 @@ Now we will install and run teh program, but first let's download the repo:
 and enjoy playing!
 
 __Note__: You might want to delete the objective files and keep only the src part. In that case:
-```
+```shell
 ~$ make clean
 ```
 and you are set.
