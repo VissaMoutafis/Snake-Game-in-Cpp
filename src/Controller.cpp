@@ -23,6 +23,7 @@ int Controller::act(void){
 
     if (snake->hasBitSnack(this->snack.getY(), this->snack.getX()) == true)
     {
+        advanceDifficulty();
         generateSnack(this->snack);
         this->snake->incSize();
     }

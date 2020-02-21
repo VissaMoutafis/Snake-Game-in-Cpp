@@ -22,3 +22,5 @@ void printChar(int y, int x, graphics_input img);
 void printMsg(int y, int x, char *str);
 char readChar(int y, int x);
 int readInpt();
+
+void advanceDifficulty(void);

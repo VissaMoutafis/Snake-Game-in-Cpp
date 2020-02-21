@@ -75,3 +75,7 @@ int readInpt(){
     return getch();
 }
 
+void advanceDifficulty(void){
+    if(sleepTime > 28000000) // we set 28000000 as teh min sleep time
+        sleepTime -= 1000000;
+}

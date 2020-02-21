@@ -10,8 +10,8 @@ void generateSnack(Point &snack){
 
     int x, y;
     
-    x = (rand() + 1) % GAME_RIGHT_WALL_X;
-    y = (rand() + 1) % GAME_BOTTOM_WALL_Y;
+    x = rand() % GAME_RIGHT_WALL_X + 1;
+    y = rand() % GAME_BOTTOM_WALL_Y + 1;
     
     snack.setPoint(y, x);
 
