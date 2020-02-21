@@ -10,6 +10,9 @@ A simple snake game, with terminal GUI implemented using ncurses library.
 - __Right-Arrow__ to go right.
 - __q__ to exit game. 
 
+### TODO:
+- Add a scoreboard.
+
 ---
 
 ## Prerequisities
