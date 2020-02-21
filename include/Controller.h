@@ -8,6 +8,7 @@
 class Controller{
 private:
     Snake *snake; //the figure the controler controls
+    Point snack;
     graphics_input inpt;
 public:
     Controller(Snake* _snake);

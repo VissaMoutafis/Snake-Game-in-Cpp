@@ -1,8 +1,11 @@
 #include "Graphics.h"
 #include <chrono>
 #include <thread>
+#include <time.h>
+#include <cstdlib>
+
 ///Utillities for the graphics
-unsigned int sleepTime = 50000000;
+unsigned int sleepTime = 40000000;
 static WINDOW *_box = NULL;
 
 static void createBox(void){
@@ -17,6 +20,8 @@ static void destroyBox(void){
 }
 //Initialization function
 void initializeGraphics(void){
+    srand((unsigned int) time(NULL));
+
     initscr(); //initialize curses
     cbreak(); //set line buffering to false
     noecho(); //set input echo to false

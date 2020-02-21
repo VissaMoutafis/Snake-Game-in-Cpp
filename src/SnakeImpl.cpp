@@ -6,7 +6,7 @@ Snake::Snake(int headY, int headX)
 :direction{LEFT}
 {
     snake.push_back(Point{headY, headX, '>'}); //add the head of the snake
-    for(int i=1; i<=7; i++)
+    for(int i=1; i<=3; i++)
         snake.push_back(Point{headY, headX+i, BODY});
     this->printSnake();
 }
@@ -28,7 +28,8 @@ bool Snake::isBitten(void){
 }
 
 bool Snake::hasBitSnack(int snackY, int snackX){
-    return readChar(snackY, snackX) == SNACK;
+    return snake.begin()->getY() == snackY 
+           && snake.begin()->getX() == snackX;
 }
 
 bool Snake::hasCrashedWall(void){

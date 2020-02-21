@@ -11,9 +11,9 @@ typedef int graphics_input; //the type of the graphics input
 
 
 #define GAME_TOP_WALL_Y 1
-#define GAME_BOTTOM_WALL_Y LINES+1
-#define GAME_LEFT_WALL_X -1
-#define GAME_RIGHT_WALL_X COLS+1
+#define GAME_BOTTOM_WALL_Y (LINES - 4)
+#define GAME_LEFT_WALL_X 1
+#define GAME_RIGHT_WALL_X (COLS - 2)
 
 void initializeGraphics(void);
 void endGraphics(void);

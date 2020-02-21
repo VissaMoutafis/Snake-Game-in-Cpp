@@ -4,13 +4,15 @@
 using namespace std;
 
 Controller::Controller()
-:inpt{0}
+: snack{SNACK} ,inpt{0}
 {
     snake = new Snake();
+    generateSnack(snack);
 }
 
 Controller::Controller(Snake *_snake)
-: snake{_snake}, inpt{0} {
+: snake{_snake}, snack{SNACK}, inpt{0}
+{
 
     assert(this->snake != NULL);
 }
@@ -18,6 +20,13 @@ Controller::Controller(Snake *_snake)
 Controller::~Controller(){}
 
 int Controller::act(void){
+
+    if (snake->hasBitSnack(this->snack.getY(), this->snack.getX()) == true)
+    {
+        generateSnack(this->snack);
+        this->snake->incSize();
+    }
+
     switch (this->inpt)
     {
     case UP:
@@ -36,8 +45,9 @@ int Controller::act(void){
         snake->move();
     break;
     }
+
     refreshScreen();
-    
+
     if(snake->isBitten()) 
         return DEFEAT;
     if (snake->hasCrashedWall())
