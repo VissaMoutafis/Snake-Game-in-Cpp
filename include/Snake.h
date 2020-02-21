@@ -3,7 +3,8 @@
 #include <list>
 
 #include "Point.h" //the library we need to implement the snake
-#define SNACK '*'
+#include "Snack.h"
+
 #define BODY 'o'
 class Snake{
 private:
@@ -23,6 +24,8 @@ public:
 
     bool isBitten(void);                     //function to check if the snake bit its self
     bool hasBitSnack(int snackY, int snackX);//checks if the snake has bitten a snack
+
+    bool hasCrashedWall(void);               // method to check if the snake crashed the walls
 
     int getSize(void);                       //get the current length
     void incSize(void);                      //function to increase the length

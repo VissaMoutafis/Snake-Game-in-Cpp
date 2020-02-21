@@ -8,11 +8,10 @@ int main() {
     initializeGraphics();
     Controller c;
         /* CODE TO BE WRITTEN... */
-        graphics_input in;
     while(c.wantsToQuit() == false){
         c.readInput();
-        c.act();
-        
+        if(c.act() == DEFEAT)
+            break;
     }
     endGraphics();
     return 0;

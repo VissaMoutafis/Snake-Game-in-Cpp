@@ -1,6 +1,6 @@
 #include "Controller.h"
 #include <assert.h>
-#include <iostream>
+
 using namespace std;
 
 Controller::Controller()
@@ -17,7 +17,7 @@ Controller::Controller(Snake *_snake)
 
 Controller::~Controller(){}
 
-void Controller::act(void){
+int Controller::act(void){
     switch (this->inpt)
     {
     case UP:
@@ -37,6 +37,12 @@ void Controller::act(void){
     break;
     }
     refreshScreen();
+    
+    if(snake->isBitten()) 
+        return DEFEAT;
+    if (snake->hasCrashedWall())
+        return DEFEAT;
+    return 0;
 }
 
 graphics_input Controller::readInput(void){

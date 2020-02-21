@@ -61,9 +61,9 @@ void printMsg(int y, int x, char* str){
 }
 
 char readChar(int y, int x){
-    mvwgetch(_box, y, x);
     refresh();
     wrefresh(_box);
+    return mvwgetch(_box, y, x);
 }
 
 int readInpt(){
