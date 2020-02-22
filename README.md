@@ -14,8 +14,8 @@ A simple snake game, with terminal GUI implemented using ncurses library.
 
 ### TODO:
 
-- [] Add a scoreboard.
-- [] Fix the window-resize factor, since it gets all messy when you minimize/maximize the terminal window.
+- [ ] Add a scoreboard.
+- [ ] Fix the window-resize factor, since it gets all messy when you minimize/maximize the terminal window.
 
 ---
 
