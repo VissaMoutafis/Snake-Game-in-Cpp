@@ -27,6 +27,7 @@ void initializeGraphics(void){
     noecho(); //set input echo to false
     keypad(stdscr, TRUE); //this step enables the use of arrow keys and other function keys
     nodelay(stdscr, true);
+    curs_set(0); //to hide teh cursor
     //We must clear the screen from unecessary garbage
     clear();
     //Print the title
@@ -39,6 +40,7 @@ void initializeGraphics(void){
 
 //Exit function
 void endGraphics(void){
+    curs_set(1);
     destroyBox();
     endwin();
 }
