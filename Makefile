@@ -1,4 +1,4 @@
-CXX		  := g++
+CXX	      := g++
 CXX_FLAGS := -Wall -Wextra -std=c++11 -ggdb
 
 BIN		:= bin
@@ -21,3 +21,4 @@ $(BIN)/$(EXECUTABLE): $(SRC)/*.cpp
 
 clean:
 	-rm $(BIN)/*
+
