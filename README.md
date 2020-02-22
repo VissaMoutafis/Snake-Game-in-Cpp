@@ -1,9 +1,11 @@
 # Snake Game in C++
 
-
 ## Abstract
+
 A simple snake game, with terminal GUI implemented using ncurses library.
+
 #### Controls:
+
 - __Up-Arrow__ to go up.
 - __Down-Arrow__ to go down.
 - __Left-Arrow__ to go left.
@@ -11,18 +13,23 @@ A simple snake game, with terminal GUI implemented using ncurses library.
 - __q__ to exit game. 
 
 ### TODO:
-- Add a scoreboard.
+
+- [] Add a scoreboard.
+- [] Fix the window-resize factor, since it gets all messy when you minimize/maximize the terminal window.
 
 ---
 
 ## Prerequisities
 
 You need to install the following two packages:
-- libncurses5-dev : Developer’s libraries for ncurses
-- libncursesw5-dev : Developer’s libraries for ncursesw
-- gcc : C\C++ compiler
-- make : instalation tool
+
+- __libncurses5-dev__ : Developer’s libraries for ncurses,
+- __libncursesw5-dev__ : Developer’s libraries for ncursesw,
+- __gcc__ : C\C++ compiler,
+- __make__ : instalation tool.
+
 Open up a terminal and type the folllowing commands
+
 ```shell
 ~$ sudo apt update && sudo apt upgrade
 #Now to install compiler and instalation tool
@@ -36,10 +43,15 @@ Now you are ready to use the repo.
 
 ## Downloading, Instalation and Running the Program
 
-Now we will install and run teh program, but first let's download the repo:
+Now we will install and run the program, but first let's download the repo:
+
 ```shell
 ~$ git clone https://github.com/VissaMoutafis/Snake_Game_in_Cpp
+
+# cd in the directory
 ~$ cd Snake_Game_in_Cpp
+
+#run the 'make run' to install and play
 ~$ make run
 ```
 
