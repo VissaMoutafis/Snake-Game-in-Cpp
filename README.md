@@ -23,14 +23,14 @@ A simple snake game, with terminal GUI implemented using ncurses library.
 
 ## Prerequisities
 
-You need to install the following two packages:
+You need to install the following packages:
 
 - __libncurses5-dev__ : Developer’s libraries for ncurses,
 - __libncursesw5-dev__ : Developer’s libraries for ncursesw,
 - __gcc__ : C\C++ compiler,
 - __make__ : instalation tool.
 
-Open up a terminal and type the folllowing commands
+Open up a terminal and type the folllowing commands:
 
 ```shell
 #make sure everything is updated
@@ -62,7 +62,7 @@ Now we will install and run the program, but first let's download the repo:
 
 and enjoy playing!
 
-__Note__: You might want to delete the objective files and keep only the src part. In that case:
+__Note__: You might want to delete the objective files and keep only the src part (__clean up__). In that case:
 ```shell
 ~$ make clean
 ```
