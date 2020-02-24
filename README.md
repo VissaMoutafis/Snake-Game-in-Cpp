@@ -78,7 +78,7 @@ Special thanks to [plato(otalpster)](https://github.com/otalpster) for fixing a 
 ---
 
 ## Licence: MIT
-Check the file LICENCE.
+Check the file LICENCE or click the following [link](https://github.com/VissaMoutafis/Snake_Game_in_Cpp/blob/master/LICENSE).
 
 ## Appendix
 If you are interested to know more about terminal gui apps and __especially ncurses library__, check [this](http://www.tldp.org/HOWTO/NCURSES-Programming-HOWTO/index.html) out!
