@@ -29,7 +29,7 @@ Controller::~Controller(){delete snake;}
 
 static void printScore(unsigned int _score){
     string str = "Score: " + to_string(_score); 
-    printMsg(0, 0, (char*)str.c_str()); //-1, -1 because otherwise it'll be printed inside the game box
+    printMsg(-1, -1, (char*)str.c_str()); //-1, -1 because otherwise it'll be printed inside the game box
 }
 
 int Controller::act(void){

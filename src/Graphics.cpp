@@ -62,7 +62,13 @@ void printChar(int y, int x, graphics_input img){
 }
 
 void printMsg(int y, int x, char* str){
-    mvwaddstr(_box, y, x, str);
+    if(y>0 && x>0)
+        mvwaddstr(_box, y, x, str);
+    else{
+        if(y < 0) y = 2 + y;
+        if(x < 0) x = 0;
+        mvaddstr(y, x, str);
+    }
     refresh();
     wrefresh(_box);
 }
