@@ -11,13 +11,9 @@ Point::Point(int y, int x, graphics_input img)
 //delegating the previous constructor
 Point::Point()
 :Point(10, 10, '*')
-{
+{}
 
-}
-
-Point::~Point(){
-    /*No need to do something */
-}
+Point::~Point(){/*No need to do something */}
 
 void Point::setPoint(int y, int x){
     this->x = x;

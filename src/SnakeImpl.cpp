@@ -8,7 +8,6 @@ Snake::Snake(int headY, int headX)
     snake.push_back(Point{headY, headX, '>'}); //add the head of the snake
     for(int i=1; i<=3; i++)
         snake.push_back(Point{headY, headX+i, BODY});
-    this->printSnake();
 }
 
 Snake::~Snake(){}

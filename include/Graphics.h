@@ -15,7 +15,7 @@ typedef int graphics_input; //the type of the graphics input
 #define GAME_LEFT_WALL_X 1
 #define GAME_RIGHT_WALL_X (COLS - 2)
 
-void initializeGraphics(void);
+void initializeGraphics(char* gameName);
 void endGraphics(void);
 void refreshScreen(void);
 void printChar(int y, int x, graphics_input img);

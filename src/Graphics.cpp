@@ -19,7 +19,7 @@ static void destroyBox(void){
     delwin(_box);
 }
 //Initialization function
-void initializeGraphics(void){
+void initializeGraphics(char* gameName){
     srand((unsigned int) time(NULL));
 
     initscr(); //initialize curses
@@ -27,11 +27,11 @@ void initializeGraphics(void){
     noecho(); //set input echo to false
     keypad(stdscr, TRUE); //this step enables the use of arrow keys and other function keys
     nodelay(stdscr, true);
-    curs_set(0); //to hide teh cursor
+    curs_set(0); //to hide the cursor
     //We must clear the screen from unecessary garbage
     clear();
     //Print the title
-    mvprintw(0, (COLS/2) - 12, "~Snake Game by VissaM~");
+    mvprintw(0, (COLS/2) - 12, gameName);
     refresh();
     
     //create the game box

@@ -1,19 +1,12 @@
 
 #include <ncurses.h>
 #include <iostream>
-#include "Controller.h"
+#include "Game.h"
 using namespace std;
 
 int main() {
-    initializeGraphics();
-    Controller c;
-        /* CODE TO BE WRITTEN... */
-    while(c.wantsToQuit() == false){
-        c.readInput();
-        if(c.act() == DEFEAT)
-            break;
-    }
-    endGraphics();
+    SnakeGame game;
+    game.play();
     return 0;
 
 }
