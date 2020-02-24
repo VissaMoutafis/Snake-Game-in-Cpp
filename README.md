@@ -33,10 +33,13 @@ You need to install the following two packages:
 Open up a terminal and type the folllowing commands
 
 ```shell
+#make sure everything is updated
 ~$ sudo apt update && sudo apt upgrade
+
 #Now to install compiler and instalation tool
 ~$ sudo apt-get install gcc make
-#And the actuall library
+
+#And the actuall library (ncurses)
 ~$ sudo apt-get install libncurses5-dev libncursesw5-dev
 ```
 Now you are ready to use the repo.
@@ -76,5 +79,10 @@ Special thanks to [plato(otalpster)](https://github.com/otalpster) for fixing a 
 
 ## Licence: MIT
 Check the file LICENCE.
+
+## Appendix
+If you are interested to know more about terminal gui apps and __especially ncurses library__, check [this](http://www.tldp.org/HOWTO/NCURSES-Programming-HOWTO/index.html) out!
+
+Another ncurses guide (maybe more begginer friendly) is [this](http://www.cs.ukzn.ac.za/~hughm/os/notes/ncurses.html) one.
 
 ### Enjoy!
