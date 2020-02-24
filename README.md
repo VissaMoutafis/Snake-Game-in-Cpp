@@ -70,6 +70,8 @@ and you are set.
 ## Contributors
 [VissaM](https://github.com/VissaMoutafis)
 
+Special thanks to [plato(otalpster)](https://github.com/otalpster) for fixing a bug that i would never notice! (Thnx man)
+
 ---
 
 ## Licence: MIT
