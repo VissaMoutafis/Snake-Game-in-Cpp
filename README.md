@@ -15,9 +15,9 @@ A simple snake game, with terminal GUI implemented using ncurses library.
 ### TODO:
 
 - [x] Increase speed of the snake when it devours a snack.
-- [ ] Add a scoreboard.
+- [x] Add a scoreboard.
 - [ ] Fix the window-resize factor, since it gets all messy when you minimize/maximize the terminal window.
-- [ ] Create a 'Game' class and provide interface through that function so that the user don't have to mess with the graphics   
+- [x] Create a 'Game' class and provide interface through that function so that the user don't have to mess with the graphics   
       snake and controller classes. 
 ---
 
