@@ -1,5 +1,6 @@
 #include "Game.h"
 #include <algorithm>
+#include <limits.h>
 using namespace std;
 
 SnakeGame::SnakeGame()
@@ -59,8 +60,9 @@ void SnakeGame::play(void){
 
         
         play(playerName); //get the player to play the game
-        
 
+        cin.clear();
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
         cout << "Do you want to play again? (yes or no): ";
         string ans;
         
